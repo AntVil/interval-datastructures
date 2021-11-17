@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="images/icon.png">
+        <title>geometric-datastructure</title>
+
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        
+        <script src="./structures/intervalTree.js"></script>
+        <script src="./structures/segmentTree.js"></script>
+        <script src="./script.js"></script>
+    </head>
+
+    <body>
+        <aside>
+            <div>interval-size</div>
+            <div>
+                <input id="interval-size" onchange="updateIntervalSize()" type="range" min="1" value="3" max="5"/>
+            </div>
+
+            <div class="name">A</div>
+            <div class="multi-slider">
+                <input type="range" min="0" value="20" max="7"/>
+                <input type="range" min="0" value="40" max="7"/>
+            </div>
+
+            <div class="name">B</div>
+            <div class="multi-slider">
+                <input type="range" min="0" value="20" max="7"/>
+                <input type="range" min="0" value="40" max="7"/>
+            </div>
+
+            <div class="name">C</div>
+            <div class="multi-slider">
+                <input type="range" min="0" value="20" max="7"/>
+                <input type="range" min="0" value="40" max="7"/>
+            </div>
+
+            <div>Intervals:</div>
+            <div id="intervals"></div>
+
+            <button onclick="shuffleSliders()">random</button>
+        </aside>
+
+        <canvas id="intervalTreeCanvas"></canvas>
+
+        <canvas id="segmentTreeCanvas"></canvas>
+    </body>
+</html>
